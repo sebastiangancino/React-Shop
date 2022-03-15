@@ -4,8 +4,8 @@ import "../styles/global.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "../containers/Layout";
-import Login from "../containers/Login";
-import RecoveryPassword from "../containers/RecoveyPassword";
+import Login from "../pages/Login";
+import RecoveryPassword from "../pages/RecoveyPassword";
 import Home from "../pages/Home";
 import SendEmail from "../pages/SendEmail"
 
@@ -14,6 +14,8 @@ import NewPassword from "../pages/NewPassword";
 import CreateAccount from "../pages/CreateAccount";
 import Orders from "../pages/Orders";
 import MyAccount from "../pages/MyAccount";
+import Checkout from "../pages/Checkout";
+import PasswordRecovery from "../pages/PasswordRecovery";
 
 
 
@@ -30,8 +32,11 @@ const App = () => {
 					<Route path="/create-account" element ={<CreateAccount/>}/>
 					<Route path="/login" element = {<Login/>}/>
 					<Route path="/orders" element = {<Orders/>}/>
-					<Route path= "my-account" element = {<MyAccount/>}/>
-					 					
+					<Route path= "/my-account" element = {<MyAccount/>}/>
+					<Route path ="/checkout" element = {<Checkout/>}/>
+					<Route path="/password-recovery" element ={<PasswordRecovery/>}/>
+					
+
 
 					<Route path="/" element={<NotFound />} />
 
