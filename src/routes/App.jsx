@@ -5,10 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "../containers/Layout";
 import Login from "../pages/Login";
-import RecoveryPassword from "../pages/RecoveyPassword";
 import Home from "../pages/Home";
 import SendEmail from "../pages/SendEmail"
-
 import NotFound from "../pages/NotFound";
 import NewPassword from "../pages/NewPassword";
 import CreateAccount from "../pages/CreateAccount";
@@ -26,7 +24,6 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
-					<Route path="/recovery-password" element={<RecoveryPassword />} />
 					<Route path="/send-email" element={<SendEmail />} />
 					<Route path="/new-password" element={<NewPassword />} />
 					<Route path="/create-account" element ={<CreateAccount/>}/>
